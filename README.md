@@ -12,7 +12,7 @@ Music genre classification is a crucial task in various music-related applicatio
 ## Steps
 1. **Data Collection and Preprocessing**:
    - Collect the GTZAN dataset.
-   - Preprocess audio files, including normalization, segmentation, and feature extraction using techniques such as Fourier transforms, MFCCs, and spectrograms.
+   - Preprocess audio files, including normalization, segmentation, and feature extraction using MFCCs and VGGish techniques.
 2. **Data Splitting**:
    - Split the dataset into training, validation, and test sets.
 3. **Model Architecture**:

@@ -8,7 +8,6 @@
 ## Abstract
 Music genre classification is a crucial task in various music-related applications such as recommendation systems and search engines. This project aims to implement a deep learning model for accurately predicting the genre of a given piece of music. Deep learning methods, including LSTM, CNN, and Transformer architectures, will be explored for feature learning and classification.
 
-
 ## Steps
 1. **Data Collection and Preprocessing**:
    - Collect the GTZAN dataset.
@@ -28,6 +27,8 @@ Music genre classification is a crucial task in various music-related applicatio
 7. **Visualization**:
    - Visualize the model's output to demonstrate its ability to accurately classify music by genre.
 
+## Milestone 1
+For the first milestone of our project, we conduct data preprocessing with 2 feature extraction methods, MFCCs and VGGish in the corresponding Jupyter notebooks. The notebook contains training, validation and test sets as input (X) and output (Y) matrices, which can be later used for training deep neural networks.
 
 
 

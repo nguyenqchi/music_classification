@@ -43,6 +43,12 @@ For the VGGish feature extraction, we have adapted the VGGish architecture, whic
 
 These preliminary results demonstrate the effectiveness of deep learning approaches for music genre recognition. Further optimization of the model architectures and hyperparameters is ongoing to improve the performance of the models.
 
+## Final Submission
+
+We improved the VGGish model by changing the kernel size, which increased its accuracy to 85%. We also evaluated the model in more detail using a confusion matrix.
+
+To test the model with data it wasn't trained on (Out-Of-Distribution data), we used 31 songs from a Kaggle dataset. The VGGish model got an accuracy of 51% on this new data, while the MFCCs model had a lower accuracy of 29%.
+
 ## Citations
 - Tzanetakis, G., & Cook, P. (2002). Musical genre classification of audio signals. IEEE Transactions on Speech and Audio Processing, 10(5), 293-302.
 - Hershey, S., Chaudhuri, S., Ellis, D. P., Gemmeke, J. F., Jansen, A., Moore, R. C., ... & Wilson, K. (2017). CNN architectures for large-scale audio classification. In 2017 IEEE international conference on acoustics, speech and signal processing (ICASSP) (pp. 131-135). IEEE.

@@ -49,6 +49,12 @@ We improved the VGGish model by changing the kernel size, which increased its ac
 
 To test the model with data it wasn't trained on (Out-Of-Distribution data), we used 31 songs from a Kaggle dataset. The VGGish model got an accuracy of 51% on this new data, while the MFCCs model had a lower accuracy of 29%.
 
+## Instructions for Reproduction
+
+Download GTZAN dataset from Kaggle (https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification) and save it to your Google Drive.
+
+Run the corresponding Jupyter Notebook for the reproduction of each model.
+
 ## Citations
 - Tzanetakis, G., & Cook, P. (2002). Musical genre classification of audio signals. IEEE Transactions on Speech and Audio Processing, 10(5), 293-302.
 - Hershey, S., Chaudhuri, S., Ellis, D. P., Gemmeke, J. F., Jansen, A., Moore, R. C., ... & Wilson, K. (2017). CNN architectures for large-scale audio classification. In 2017 IEEE international conference on acoustics, speech and signal processing (ICASSP) (pp. 131-135). IEEE.

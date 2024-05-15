@@ -25,7 +25,7 @@ We train a deep neural network model comprising several convolutional and poolin
 For the VGGish preprocessed data, we use a 2D convolutional neural network (CNN) architecture trained on top of the VGGish feature extractor. VGGish converts the input audio features into a high-level 128-dimensional embedding that is semantically meaningful and suitable for downstream classification.
 The downstream 2D CNN model can be shallower than usual since the VGGish embedding is more semantically compact and informative compared to raw audio features.
 
-4. **Training Models: **
+4. **Training Model:**
 
 We establish a pipeline for training, hyperparameter tuning, and testing for both the MFCCs-based dense model and the VGGish-based 2D CNN model. The MFCCs-based dense model serves as a baseline to evaluate the performance of the VGGish-based CNN.
 

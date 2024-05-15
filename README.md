@@ -13,20 +13,28 @@ Music genre classification is a crucial task in various music-related applicatio
 1. **Data Collection and Preprocessing**:
    - Collect the GTZAN dataset.
    - Preprocess audio files, including normalization, segmentation, and feature extraction using MFCCs and VGGish techniques.
-2. **Data Splitting**:
-   - Split the dataset into training, validation, and test sets.
-3. **Model Architecture**:
-   - Design or adapt LSTM, CNN, and/or Transformer architectures for music genre classification.
-4. **Model Training**:
-   - Train the model on the training set using an appropriate loss function and optimizer.
-   - Start with two music genres and gradually increase the number of genres.
-   - Shorten the length of analyzed music clips as needed.
-5. **Hyperparameter Tuning**:
-   - Tune hyperparameters such as learning rate, number of layers, and number of filters to improve performance on the validation set.
-6. **Model Evaluation**:
-   - Evaluate the performance of the model on the test set using metrics such as accuracy, precision, recall, and F1 score.
-7. **Visualization**:
-   - Visualize the model's output to demonstrate its ability to accurately classify music by genre.
+  
+
+2. **MFCCs Feature Extraction and Model:**
+
+For the MFCCs preprocessed data, we extract 13 coefficients computed by MFCC. Each coefficient represents a different aspect of the spectral shape of the audio clip, a method validated by previous research in speech recognition.
+We train a deep neural network model comprising several convolutional and pooling layers, followed by dense layers for classification. This model serves as a baseline for comparison.
+
+3. **VGGish Feature Extraction and Model:**
+
+For the VGGish preprocessed data, we use a 2D convolutional neural network (CNN) architecture trained on top of the VGGish feature extractor. VGGish converts the input audio features into a high-level 128-dimensional embedding that is semantically meaningful and suitable for downstream classification.
+The downstream 2D CNN model can be shallower than usual since the VGGish embedding is more semantically compact and informative compared to raw audio features.
+
+4. **Training Models: **
+
+We establish a pipeline for training, hyperparameter tuning, and testing for both the MFCCs-based dense model and the VGGish-based 2D CNN model. The MFCCs-based dense model serves as a baseline to evaluate the performance of the VGGish-based CNN.
+
+5. **Model Evaluation**:
+
+We evaluate the performance of both models using metrics such as accuracy, precision, recall, and F1-score. These metrics provide a comprehensive assessment of the models’ classification capabilities.
+
+We also evaluate the performance of both models on Out-Out-Distribution data to assess their generalization capabilities.
+
 
 ## Milestone 1
 For the first milestone of our project, we conduct data preprocessing with 2 feature extraction methods, MFCCs and VGGish in the corresponding Jupyter notebooks. The notebook contains training, validation and test sets as input (X) and output (Y) matrices, which can be later used for training deep neural networks.
